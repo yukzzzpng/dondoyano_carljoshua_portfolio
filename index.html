@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Student Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+      <div class="particle-layer"></div>
+      <div class="scan-line"></div>
+      <div class="scan-line scan-line-2"></div>
+      <div class="tech-grid"></div>
+      <div class="glitch-overlay"></div>
+      <div class="energy-wave wave-1"></div>
+      <div class="energy-wave wave-2"></div>
+      <div class="energy-wave wave-3"></div>
+      <div class="corner-accent corner-1"></div>
+      <div class="corner-accent corner-2"></div>
+      <div class="corner-accent corner-3"></div>
+      <div class="corner-accent corner-4"></div>
+    </div>
+
+    <header class="top-nav">
+      <div class="logo">Cen<span>Dog</span></div>
+      <nav>
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="section hero">
+        <div class="hero-layout">
+          <div class="hero-content">
+            <p class="eyebrow"></p>
+            <h1>
+              Hi! I'm <span class="accent">Cendrei</span><br />
+              
+            </h1>
+            <p class="hero-text">
+              IT student with internship experience in IT Support and Sales Department.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn primary">View My Projects</a>
+              <a href="#contact" class="btn ghost">Contact Me</a>
+            </div>
+            <div class="hero-meta">
+              <div>
+                <span class="label">Focus</span>
+                <span class="value">Web Development • Networking • Security • Technical Support</span>
+              </div>
+              <div>
+                <span class="label">Location</span>
+                <span class="value">Valenzuela City, Philippines</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-profile" aria-label="Profile photo">
+            <div class="hero-profile-inner">
+              <img
+                class="profile-photo"
+                src="images/cendot.png"
+                alt="Profile photo of Your Name"
+              />
+              <p class="profile-caption"></p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- About Me Section (with Education combined) -->
+      <section id="about" class="section about">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <p>A quick overview of who I am as an IT student.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Who I Am</h3>
+            <p>
+              I'm Cendrei Cales an IT student with a strong interest in website development,
+              networking, and cybersecurity. I enjoy learning new technologies
+              and building practical projects that solve real problems.
+            </p>
+            <p>
+              My goal is to become a cybersecurity professional who is dedicated to protecting digital systems, networks, and data from cyber threats. 
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>What I Do</h3>
+            <ul class="list">
+              <li>Design and build responsive websites</li>
+              <li>Practice object-oriented programming and algorithms</li>
+              <li>Experiment with networking concepts and basic security</li>
+              <li>Collaborate on academic and personal projects</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Education Timeline (moved here) -->
+        <div class="section-header" style="margin-top: 3rem;">
+          <h2>My Education</h2>
+          <p>My academic journey from elementary to college.</p>
+        </div>
+        <div class="education-timeline">
+          <article class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-logo">
+                <img src="images/plv.jpg" alt="College logo" />
+              </div>
+              <div class="timeline-info">
+                <h3>Pamantasan ng Lungsod ng Valenzuela</h3>
+                <p class="timeline-years">2022 - Present</p>
+                <p class="timeline-desc">Current 4th Year College</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-logo">
+                <img src="images/senior.jpg" alt="Senior High School logo" />
+              </div>
+              <div class="timeline-info">
+                <h3>Lawang Bato Senior High School</h3>
+                <p class="timeline-years">2020 - 2022</p>
+                <p class="timeline-desc">Senior High School</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-logo">
+                <img src="images/lbnhs.jpg" alt="Junior High School logo" />
+              </div>
+              <div class="timeline-info">
+                <h3>Lawang Bato National High School</h3>
+                <p class="timeline-years">2016 - 2020</p>
+                <p class="timeline-desc">Junior High School</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-logo">
+                <img src="images/LBES.jpg" alt="Elementary School logo" />
+              </div>
+              <div class="timeline-info">
+                <h3>Lawang Bato Elementary School</h3>
+                <p class="timeline-years">2010 - 2016</p>
+                <p class="timeline-desc">Elementary School</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section skills">
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p>Technologies and tools I'm currently learning and using.</p>
+        </div>
+        <div class="skills-wrapper">
+          <div class="skill-group">
+            <h3 class="skill-group-title">Programming</h3>
+            <div class="skill-list">
+              <div class="skill-badge" title="HTML">
+                <i class="fab fa-html5"></i>
+                <span>HTML</span>
+              </div>
+              <div class="skill-badge" title="CSS">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS</span>
+              </div>
+              <div class="skill-badge" title="JavaScript">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-badge" title="C#">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" />
+                <span>C#</span>
+              </div>
+              <div class="skill-badge" title="Java">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Web & Tools</h3>
+            <div class="skill-list">
+              <div class="skill-badge" title="Responsive Design">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Responsive</span>
+              </div>
+              <div class="skill-badge" title="Git & GitHub">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-badge" title="VS Code">
+                <i class="fas fa-code"></i>
+                <span>VS Code</span>
+              </div>
+              <div class="skill-badge" title="REST APIs">
+                <i class="fas fa-cloud"></i>
+                <span>REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">IT & Networking</h3>
+            <div class="skill-list">
+              <div class="skill-tag">Computer Hardware</div>
+              <div class="skill-tag">Networking Basics</div>
+              <div class="skill-tag">Linux (basic)</div>
+              <div class="skill-tag">Troubleshooting</div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Design & UX/UI</h3>
+            <div class="skill-list">
+              <div class="skill-badge" title="Canva">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" />
+                <span>Canva</span>
+              </div>
+              <div class="skill-badge" title="Figma">
+                <i class="fab fa-figma"></i>
+                <span>Figma</span>
+              </div>
+              <div class="skill-badge" title="Blender">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender" />
+                <span>Blender</span>
+              </div>
+              <div class="skill-badge" title="Photoshop">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobephotoshop.svg" alt="Photoshop" />
+                <span>Photoshop</span>
+              </div>
+              <div class="skill-badge" title="Illustrator">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobeillustrator.svg" alt="Illustrator" />
+                <span>Illustrator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Office Tools</h3>
+            <div class="skill-list">
+              <div class="skill-badge" title="Word">
+                <i class="fab fa-microsoft"></i>
+                <span>Word</span>
+              </div>
+              <div class="skill-badge" title="Excel">
+                <i class="fas fa-file-excel"></i>
+                <span>Excel</span>
+              </div>
+              <div class="skill-badge" title="Publisher">
+                <i class="fas fa-file-alt"></i>
+                <span>Publisher</span>
+              </div>
+              <div class="skill-badge" title="PowerPoint">
+                <i class="fas fa-file-powerpoint"></i>
+                <span>PowerPoint</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Database Management</h3>
+            <div class="skill-list">
+              <div class="skill-badge" title="MySQL">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-badge" title="MongoDB">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section (Enhanced) -->
+      <section id="projects" class="section projects">
+        <div class="section-header">
+          <h2>My Projects</h2>
+          <p>Some of the work I've done as an IT student.</p>
+        </div>
+        
+        <div class="projects-grid-new">
+          <!-- Project 1 -->
+          <article class="project-card-new">
+            <div class="project-card-header">
+              <span class="project-tag-new">UI/UX Design</span>
+              <h3>EcoRide Parada</h3>
+            </div>
+            
+            <div class="project-card-body">
+              <p class="project-card-description">
+                A comprehensive bike-renting system with mobile app for users and web dashboard for administrators, promoting eco-friendly transportation in the community.
+              </p>
+              
+              <div class="project-card-images">
+                <figure class="project-image-new clickable-image-project" data-image="images/ecoride-admin.jpg" data-caption="Allows residents to log in securely using their email and password. It also provides quick access to account registration and password recovery options, ensuring only verified Parada residents can access the EcoRide Parada services.">
+                  <img src="images/eco1.png" alt="Admin Dashboard" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+                <figure class="project-image-new clickable-image-project" data-image="images/ecoride-scan.jpg" data-caption="Displays the interactive 3D/2D map feature where residents can view nearby bike stations and the number of available bikes. It allows users to explore station details
+                ">
+                  <img src="images/eco2.png" alt="QR Scan Interface" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+                <figure class="project-image-new clickable-image-project" data-image="images/ecoride-map.jpg" data-caption=" Super Admin Dashboard provides a centralized platform for monitoring and managing all system activities in real time. It displays key metrics such as the number of available bikes, active users, active admins, today’s revenue, and ongoing rides. The dashboard includes live activity tables showing rider details, start times, and current bike statuses. Live Activity Map enables the Super Admin to track the real-time locations and statuses of all bikes, including offline and active ones.
+                ">
+                  <img src="images/eco3.png" alt="Ride Tracking Map" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+              </div>
+              
+              <div class="project-card-tech">
+                <div class="tech-logo" title="Figma">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+                  <span>Figma</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card-new">
+            <div class="project-card-header">
+              <span class="project-tag-new">UI/UX Design</span>
+              <h3>Dog Mania Hotel</h3>
+            </div>
+            
+            <div class="project-card-body">
+              <p class="project-card-description">
+                A Reservation Management System is a platform for pet owners and businesses, offering tools for pet registration. appointment scheduling, and financial management.
+              </p>
+              
+              <div class="project-card-images">
+                <figure class="project-image-new clickable-image-project" data-image="images/project2-1.jpg" data-caption="It optimizes operations and customer interactions, ensuring a seamless experience for both parties and enhancing productivity in pet-related businesses.">
+                  <img src="images/dog1.png" alt="Project 2 Image 1" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+                <figure class="project-image-new clickable-image-project" data-image="images/project2-2.jpg" data-caption="It optimizes operations and customer interactions, ensuring a seamless experience for both parties and enhancing productivity in pet-related businesses.">
+                  <img src="images/dog2.png" alt="Project 2 Image 2" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+                <figure class="project-image-new clickable-image-project" data-image="images/project2-3.jpg" data-caption="It optimizes operations and customer interactions, ensuring a seamless experience for both parties and enhancing productivity in pet-related businesses.">
+                  <img src="images/dog3.png" alt="Project 2 Image 3" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+              </div>
+              
+              <div class="project-card-tech">
+                <div class="tech-logo" title="Figma">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+                  <span>Figma</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card-new">
+            <div class="project-card-header">
+              <span class="project-tag-new">UI/UX Design</span>
+              <h3>PLV Visitor Management System</h3>
+            </div>
+            
+            <div class="project-card-body">
+              <p class="project-card-description">
+                Visitor Management System at Pamantasan ng Lungsod ng Valenzuela (PLV) by implementing the PLV QRPass, a QR-based entry solution integrated with Optical Character Recognition (OCR) technology.
+              </p>
+              
+              <div class="project-card-images">
+                <figure class="project-image-new clickable-image-project" data-image="images/project3-1.jpg" data-caption="This system aims to improve the overall security, efficiency, and user experience for visitors entering the campus. The new system will refine the entry process by allowing visitors to generate and use a temporary QR code pass for campus access, thereby minimizing manual checks and reducing wait times.">
+                  <img src="images/visit1.png" alt="Project 3 Image 1" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+                <figure class="project-image-new clickable-image-project" data-image="images/project3-2.jpg" data-caption="This system aims to improve the overall security, efficiency, and user experience for visitors entering the campus. The new system will refine the entry process by allowing visitors to generate and use a temporary QR code pass for campus access, thereby minimizing manual checks and reducing wait times.">
+                  <img src="images/visit2.png" alt="Project 3 Image 2" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+                <figure class="project-image-new clickable-image-project" data-image="images/project3-3.jpg" data-caption="This system aims to improve the overall security, efficiency, and user experience for visitors entering the campus. The new system will refine the entry process by allowing visitors to generate and use a temporary QR code pass for campus access, thereby minimizing manual checks and reducing wait times.">
+                  <img src="images/visit3.png" alt="Project 3 Image 3" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+              </div>
+              
+              <div class="project-card-tech">
+                <div class="tech-logo" title="Figma">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+                  <span>Figma</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card-new">
+            <div class="project-card-header">
+              <span class="project-tag-new">Blender</span>
+              <h3>Food Stall</h3>
+            </div>
+            
+            <div class="project-card-body">
+              <p class="project-card-description">
+                This project features a fully modeled and rendered hotdog sandwich food stall created using Blender.
+              </p>
+              
+              <div class="project-card-images">
+                <figure class="project-image-new clickable-image-project" data-image="images/project4-1.jpg" data-caption="The project highlights my skills in 3D modeling, texturing, lighting, and scene composition, with a focus on presenting a believable commercial environment suitable for small food businesses.">
+                  <img src="images/cendog1.png" alt="Project 4 Image 1" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+                <figure class="project-image-new clickable-image-project" data-image="images/project4-2.jpg" data-caption="Highlight View">
+                  <img src="images/cendog2.png" alt="Project 4 Image 2" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+                <figure class="project-image-new clickable-image-project" data-image="images/project4-3.jpg" data-caption="Side View">
+                  <img src="images/cendog3.png" alt="Project 4 Image 3" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+              </div>
+              
+              <div class="project-card-tech">
+                <div class="tech-logo" title="Blender">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender" />
+                  <span>Blender</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card-new">
+            <div class="project-card-header">
+              <span class="project-tag-new">UI/UX Design</span>
+              <h3>Aware Pocket</h3>
+            </div>
+            
+            <div class="project-card-body">
+              <p class="project-card-description">
+                Aware Pocket seamlessly integrates health tracking, mindfulness exercises, and educational resources. From tracking physical activity and mitation to guiding meditation sessions and providing expert tips.
+              </p>
+              
+              <div class="project-card-images">
+                <figure class="project-image-new clickable-image-project" data-image="images/project5-1.jpg" data-caption="This app is your pocket-sized partner for a healthier, happier you Stay infonied, stay mindful, stay healthy with Aware Pocker">
+                  <img src="images/aware1.png" alt="Project 5 Image 1" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+                <figure class="project-image-new clickable-image-project" data-image="images/project5-2.jpg" data-caption="This app is your pocket-sized partner for a healthier, happier you Stay infonied, stay mindful, stay healthy with Aware Pocker">
+                  <img src="images/awaretu.png" alt="Project 5 Image 2" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+                <figure class="project-image-new clickable-image-project" data-image="images/project5-3.jpg" data-caption="This app is your pocket-sized partner for a healthier, happier you Stay infonied, stay mindful, stay healthy with Aware Pocker">
+                  <img src="images/awaretri.png" alt="Project 5 Image 3" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+              </div>
+              
+              <div class="project-card-tech">
+                <div class="tech-logo" title="Figma">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+                  <span>Figma</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card-new">
+            <div class="project-card-header">
+              <span class="project-tag-new">UI/UX Design</span>
+              <h3>aKNOWNymous</h3>
+            </div>
+            
+            <div class="project-card-body">
+              <p class="project-card-description">
+                A single player game, guess what the description refers to. They will use the description as a guide while guessing while the image is abscured.
+              </p>
+              
+              <div class="project-card-images">
+                <figure class="project-image-new clickable-image-project" data-image="images/project6-1.jpg" data-caption="It is a guessing game about general knowledge. The player must exactly guess the description and image provided in the game to finish the level. Vague images require clarification, just like hazy stories do. We want to put a stop to the cycle. Blurred pictures make us feel disappointed! The best way to encourage innovative, cognitive work and in-depth knowledge is to guess each letter correctly">
+                  <img src="images/known1.png" alt="Project 6 Image 1" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+                <figure class="project-image-new clickable-image-project" data-image="images/project6-2.jpg" data-caption="It is a guessing game about general knowledge. The player must exactly guess the description and image provided in the game to finish the level. Vague images require clarification, just like hazy stories do. We want to put a stop to the cycle. Blurred pictures make us feel disappointed! The best way to encourage innovative, cognitive work and in-depth knowledge is to guess each letter correctly">
+                  <img src="images/known2.png" alt="Project 6 Image 2" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+                <figure class="project-image-new clickable-image-project" data-image="images/project6-3.jpg" data-caption="It is a guessing game about general knowledge. The player must exactly guess the description and image provided in the game to finish the level. Vague images require clarification, just like hazy stories do. We want to put a stop to the cycle. Blurred pictures make us feel disappointed! The best way to encourage innovative, cognitive work and in-depth knowledge is to guess each letter correctly">
+                  <img src="images/known3.png" alt="Project 6 Image 3" />
+                  <div class="image-overlay">
+                    <span class="view-icon">🔍</span>
+                  </div>
+                </figure>
+              </div>
+              
+              <div class="project-card-tech">
+                <div class="tech-logo" title="Canva">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" />
+                  <span>Canva</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Experience (OJT) Section -->
+      <section id="experience" class="section experience">
+        <div class="section-header">
+          <h2>My Experience</h2>
+          <p>My on-the-job training and professional experience.</p>
+        </div>
+        <div class="experience-grid">
+          <article class="exp-card">
+            <h3 class="exp-company">Infinus Corporation</h3>
+            <p class="exp-role">OJT / IT Intern</p>
+            <p class="exp-meta">July 2025 - December 2025</p>
+            <p class="exp-description">
+              Completed an On-the-Job Training internship in Infinus Corporation, assisting in IT support, 
+              Making Sales Orders, Sales Transmitals, Making Samples for their Clients, Computer Maintenance, and Server Maintenance
+            </p>
+
+            <div class="exp-subsection">
+              <h4 class="exp-subtitle">IT Support and Networking</h4>
+              <div class="exp-media">
+                <figure class="exp-photo clickable-image" data-image="images/wan.jpeg" data-caption="Server Room Maintenance">
+                  <img src="images/wan.jpeg" alt="" />
+                </figure>
+                <figure class="exp-photo clickable-image" data-image="images/tu.jpeg" data-caption="Making Ethernet Cables and I/O Ports and Cable Management">
+                  <img src="images/tu.jpeg" alt="" />
+                </figure>
+                <figure class="exp-photo clickable-image" data-image="images/tri.jpeg" data-caption="Computer and Printer Troubleshooting">
+                  <img src="images/tri.jpeg" alt="IT Support activity" />
+                </figure>
+                <figure class="exp-photo clickable-image" data-image="images/for.jpeg" data-caption="PC assemble and Changing its Power Supply Unit">
+                  <img src="images/for.jpeg" alt="IT Support activity" />
+                </figure>
+              </div>
+              <p class="exp-caption">Server Maintainance and Computer Troubleshooting</p>
+            </div>
+
+            <div class="exp-subsection">
+              <h4 class="exp-subtitle">Sales Department</h4>
+              <div class="exp-media">
+                <figure class="exp-photo clickable-image" data-image="images/sales1.jpg" data-caption="Sales Order, Sales Transmittals, Data Encoding, Printing, Repacking Samples, Series and other office works">
+                  <img src="images/payb.jpeg" alt="Sales Department activity" />
+                </figure>
+                <figure class="exp-photo clickable-image" data-image="images/sales2.jpg" data-caption="Sales Order, Sales Transmittals, Data Encoding, Printing, Repacking Samples, Series and other office works">
+                  <img src="images/seks.jpeg" alt="Sales Department activity" />
+                </figure>
+                <figure class="exp-photo clickable-image" data-image="images/sales3.jpg" data-caption="Sales Order, Sales Transmittals, Data Encoding, Printing, Repacking Samples, Series and other office works">
+                  <img src="images/seben.jpeg" alt="Sales Department activity" />
+                </figure>
+                <figure class="exp-photo clickable-image" data-image="images/sales4.jpg" data-caption="Sales Order, Sales Transmittals, Data Encoding, Printing, Repacking Samples, Series and other office works">
+                  <img src="images/eyt.jpeg" alt="Sales Department activity" />
+                </figure>
+              </div>
+              <p class="exp-caption">Sales Oder Query and making samples for the Clients</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Lightbox Modal -->
+      <div id="image-lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#8249;</button>
+        <button class="lightbox-next" aria-label="Next image">&#8250;</button>
+        <div class="lightbox-counter">
+          <span id="lightbox-counter-text">1 / 1</span>
+        </div>
+        <div class="lightbox-content">
+          <img id="lightbox-image" src="" alt="" />
+          <p id="lightbox-caption" class="lightbox-caption"></p>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact">
+        <div class="contact-header">
+          <h2 class="contact-title">Get in Touch</h2>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-form-wrapper">
+            <form class="contact-form" onsubmit="return false;">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Your name" />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com" />
+              </div>
+              <div class="form-field">
+                <label for="subject">Subject</label>
+                <input id="subject" type="text" placeholder="Subject" />
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Your message..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-send">
+                <i class="fas fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-sidebar">
+            <div class="contact-info-card">
+              <h3>Contact Information</h3>
+              <p class="info-text">
+                Feel free to reach out to me through the contact form or directly via email.
+              </p>
+              <div class="contact-details">
+                <div class="contact-detail-item">
+                  <i class="fas fa-envelope"></i>
+                  <span>calescendrei21@gmail.com</span>
+                </div>
+                <div class="contact-detail-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Valenzuela City, Philippines</span>
+                </div>
+              </div>
+              <div class="social-links-contact">
+                <a href="https://www.instagram.com/ccendot_/" class="social-link-contact" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61584614554786" class="social-link-contact" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" class="social-link-contact" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="cv-download-card">
+              <h3>Download CV</h3>
+              <p class="info-text">
+                Get a copy of my detailed curriculum vitae to learn more about my experience and skills.
+              </p>
+              <a href="Cales resumee.pdf" download="Cales_Resume.pdf" class="btn-download">
+                <i class="fas fa-download"></i>
+                <span>Download CV</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Cendrei Cales · Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
