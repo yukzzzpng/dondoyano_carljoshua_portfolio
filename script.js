@@ -76,6 +76,7 @@ const clickableImages = document.querySelectorAll(".exp-photo.clickable-image");
 
 let currentImageIndex = 0;
 let images = [];
+let activeGallery = null; // 'experience' or 'project'
 
 // Collect only experience images - prioritize actual img src over data-image
 clickableImages.forEach((element, index) => {
@@ -127,6 +128,7 @@ function openLightbox(index) {
   if (index < 0 || index >= images.length) return;
   
   currentImageIndex = index;
+  activeGallery = "experience";
   
   // Reset image for smooth transition
   lightboxImage.style.opacity = "0";
@@ -140,6 +142,7 @@ function openLightbox(index) {
 function closeLightbox() {
   lightbox.classList.remove("active");
   document.body.style.overflow = "";
+  activeGallery = null;
   // Reset transform for next open
   setTimeout(() => {
     lightboxImage.style.opacity = "0";
@@ -183,18 +186,6 @@ function updateLightboxImage() {
       lightboxImage.style.transform = "scale(1)";
     };
   }
-}
-
-function showNextImage() {
-  if (images.length === 0) return;
-  currentImageIndex = (currentImageIndex + 1) % images.length;
-  updateLightboxImage();
-}
-
-function showPrevImage() {
-  if (images.length === 0) return;
-  currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-  updateLightboxImage();
 }
 
 // Event listeners
@@ -281,6 +272,7 @@ function openProjectLightbox(index) {
   if (index < 0 || index >= projectImagesArray.length) return;
   
   currentProjectIndex = index;
+  activeGallery = "project";
   lightboxImage.style.opacity = "0";
   lightboxImage.style.transform = "scale(0.9)";
   
@@ -319,50 +311,58 @@ function updateProjectLightboxImage() {
   }
 }
 
-// Update navigation functions to handle both galleries
-const originalShowNext = showNextImage;
-const originalShowPrev = showPrevImage;
+// Ensure we always know which gallery is currently active
+function ensureActiveGallery() {
+  if (activeGallery || !lightboxImage) return;
+
+  const currentSrc = lightboxImage.src;
+  if (!currentSrc) return;
+
+  // Try to match against project images first
+  const projectIndex = projectImagesArray.findIndex((img) => img.src === currentSrc);
+  if (projectIndex !== -1) {
+    activeGallery = "project";
+    currentProjectIndex = projectIndex;
+    return;
+  }
+
+  // Fallback: match against experience images
+  const expIndex = images.findIndex((img) => img.src === currentSrc);
+  if (expIndex !== -1) {
+    activeGallery = "experience";
+    currentImageIndex = expIndex;
+  }
+}
 
 function showNextImage() {
-  // Check which gallery is active
-  if (lightbox.classList.contains("active")) {
-    const counterText = document.getElementById("lightbox-counter-text");
-    if (counterText) {
-      const currentText = counterText.textContent;
-      const total = currentText.split(" / ")[1];
-      
-      // If it's project images (usually more than 8)
-      if (parseInt(total) > 8 || projectImagesArray.length > 0 && currentProjectIndex < projectImagesArray.length) {
-        currentProjectIndex = (currentProjectIndex + 1) % projectImagesArray.length;
-        updateProjectLightboxImage();
-        return;
-      }
-    }
+  if (!lightbox || !lightbox.classList.contains("active")) return;
+
+  ensureActiveGallery();
+
+  if (activeGallery === "project") {
+    if (projectImagesArray.length === 0) return;
+    currentProjectIndex = (currentProjectIndex + 1) % projectImagesArray.length;
+    updateProjectLightboxImage();
+  } else if (activeGallery === "experience") {
+    if (images.length === 0) return;
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    updateLightboxImage();
   }
-  
-  // Otherwise use experience images
-  if (images.length === 0) return;
-  currentImageIndex = (currentImageIndex + 1) % images.length;
-  updateLightboxImage();
 }
 
 function showPrevImage() {
-  if (lightbox.classList.contains("active")) {
-    const counterText = document.getElementById("lightbox-counter-text");
-    if (counterText) {
-      const currentText = counterText.textContent;
-      const total = currentText.split(" / ")[1];
-      
-      if (parseInt(total) > 8 || projectImagesArray.length > 0 && currentProjectIndex < projectImagesArray.length) {
-        currentProjectIndex = (currentProjectIndex - 1 + projectImagesArray.length) % projectImagesArray.length;
-        updateProjectLightboxImage();
-        return;
-      }
-    }
+  if (!lightbox || !lightbox.classList.contains("active")) return;
+
+  ensureActiveGallery();
+
+  if (activeGallery === "project") {
+    if (projectImagesArray.length === 0) return;
+    currentProjectIndex = (currentProjectIndex - 1 + projectImagesArray.length) % projectImagesArray.length;
+    updateProjectLightboxImage();
+  } else if (activeGallery === "experience") {
+    if (images.length === 0) return;
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    updateLightboxImage();
   }
-  
-  if (images.length === 0) return;
-  currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-  updateLightboxImage();
 }
 
